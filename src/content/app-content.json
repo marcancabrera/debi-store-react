@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "icon": "nav",
+    "items": [
+      {
+        "label": "Categorias",
+        "url": "/"
+      },
+      {
+        "label": "Productos",
+        "url": "/"
+      },
+      {
+        "label": "Sobre Nosotros",
+        "url": "/"
+      },
+      {
+        "label": "Contacto",
+        "url": "/"
+      }
+    ]
+  },
+  "coverPage": {
+    "title": "DEBI",
+    "subtitle": "Reposteria y cocina",
+    "cta": "Lorem Ipsum",
+    "icon": "icon-example"
+  }
+}
