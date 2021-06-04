@@ -1,0 +1,30 @@
+@import "../../scss/base.scss";
+
+.CoverPage {
+  // background-image: url('../../images/profile.png');
+  background-color: $color-cuaternary;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: $padding-large $padding-x-small $padding-extra-large;
+  position: relative;
+  text-align: center;
+
+	@include for-size(m) {
+		// background-image: url("../../images/coverpage.png");
+    background-color: #f4901e;
+	}
+
+  &:after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba($color-black, 0.4);
+    z-index: 1;
+  }
+
+
+}
