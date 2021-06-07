@@ -8,15 +8,14 @@ class Home extends Component {
     const content = this.props.content;
     const scssClass = "Home";
     const uiConfig = {
-      'nav': "light",
-      'quote': "primary",
+      nav: "light",
+      quote: "primary",
     };
-    console.log('all good bro');
 
     return (
       <div className={scssClass}>
+        <Nav content={content.nav} type={uiConfig.quote} />
         <CoverPage content={content.coverPage} />
-        <Nav content={content.nav} type={uiConfig.nav} />
       </div>
     );
   }

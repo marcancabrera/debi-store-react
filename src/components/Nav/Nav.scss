@@ -2,13 +2,14 @@
 
 .Nav {
   $self: &;
-
+  background-color: $color-grey;
   left: 0;
-  padding: 16px 0 0;
-  position: absolute;
   top: 0;
+  padding: 0;
+  margin: 0;
+  position: sticky;
   width: 100%;
-  z-index: 2;
+  z-index: 1;
 
   a {
     color: $color-black;
@@ -20,7 +21,7 @@
   }
 
   &-button {
-    @include for-size(l) {
+    @include for-size(m) {
       display: none;
     }
   }
@@ -32,7 +33,7 @@
     list-style: none;
     padding: 0;
 
-    @include for-size(l) {
+    @include for-size(m) {
       display: flex;
     }
   }
@@ -42,8 +43,7 @@
     font-size: $font-size-small;
     font-weight: 300;
     line-height: 2;
-    margin-right: $padding-small;
-    transition: transform 0.4s ease-in-out;
+    margin-right: $padding-x-small;
 
     &:active,
     &:focus,
