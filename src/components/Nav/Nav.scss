@@ -19,7 +19,7 @@
   }
 
   &-button {
-    @include for-size-nav(s) {
+    @include for-size-nav(m) {
       display: none;
     }
   }
@@ -27,10 +27,11 @@
   &-logo {
     display: flex;
     justify-content: center;
-    grid-column: 1 / 2;
-    // @include for-size-nav(s) {
-    //   grid-column: 3/5;
-    // }
+    grid-column: 4 / 5;
+
+    @include for-size-nav(m) {
+      grid-column: 1 / 2;
+    }
   }
 
   &-menu-list {
@@ -46,22 +47,31 @@
   }
 
   &-menu-left {
-    grid-column: 7 / 8;
-    justify-content: flex-start;
-    list-style: none;
     display: flex;
+    grid-column: 6 / 8;
+    justify-content: flex-end;
+    list-style: none;
     padding: 0;
+
+    @include for-size-nav(ml){
+      grid-column:  7 / 8;
+      justify-content: flex-start;
+    }
   }
 
   &-item {
-    font-family: $font-primary;
+    font-family: $font-secondary;
     font-size: $font-size-small;
     font-weight: 300;
-    line-height: 2;
-    margin: 0 $padding-x-small;
+    margin-right: $padding-small;
 
     &:last-child {
       margin-right: 0;
+    }
+
+    @include for-size-nav(ml) {
+      font-size: $font-size-medium;
+      margin: 0 $padding-small;
     }
   }
 

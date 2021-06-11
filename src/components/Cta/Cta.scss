@@ -1,25 +1,29 @@
 @import "../../scss/base.scss";
 
 .Cta {
-  color: $color-black;
   cursor: pointer;
 
   &--nav-menu-button {
-    font-family: $font-primary;
-    font-size: 25px;
+    background-color: transparent;
+    border: none;
   }
 
   &--nav-menu {
+    border: none;
     font-family: $font-secondary;
     font-size: $font-size-small;
   }
 
-  &--nav-left {
+  &--nav-menu-left {
+    border: none;
     background-color: transparent;
   }
 
   &--nav-logo {
-    background-color: transparent;
-    color: $color-black;
+    padding: 7px;
+    border-radius: 60%;
+    background-color: $color-primary-test;
+    // stroke-width: 3;
+    // stroke: $color-white;
   }
 }

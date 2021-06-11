@@ -25,11 +25,11 @@
 }
 
 .Nav {
-  --columns: 4;
+  --columns: 5;
   --gap: 6%;
 
   @include for-size-nav(s) {
-    --columns: 4;
+    --columns: 7;
     --gap: 2%;
   }
 
