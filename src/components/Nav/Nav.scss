@@ -1,12 +1,10 @@
 @import "../../scss/base.scss";
+@import "./NavLayout.scss";
 
 .Nav {
   $self: &;
   background-color: $color-grey;
-  left: 0;
   top: 0;
-  padding: 0;
-  margin: 0;
   position: sticky;
   width: 100%;
   z-index: 1;
@@ -21,21 +19,38 @@
   }
 
   &-button {
-    @include for-size(m) {
+    @include for-size-nav(s) {
       display: none;
     }
   }
 
-  &-list {
-    display: none;
-    grid-column: 1/-1;
+  &-logo {
+    display: flex;
     justify-content: center;
+    grid-column: 1 / 2;
+    // @include for-size-nav(s) {
+    //   grid-column: 3/5;
+    // }
+  }
+
+  &-menu-list {
+    display: none;
+    grid-column: 2 / 6;
+    justify-content: flex-start;
     list-style: none;
     padding: 0;
 
-    @include for-size(m) {
+    @include for-size-nav(m) {
       display: flex;
     }
+  }
+
+  &-menu-left {
+    grid-column: 7 / 8;
+    justify-content: flex-start;
+    list-style: none;
+    display: flex;
+    padding: 0;
   }
 
   &-item {
@@ -43,17 +58,15 @@
     font-size: $font-size-small;
     font-weight: 300;
     line-height: 2;
+    margin: 0 $padding-x-small;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &-item-left {
     margin-right: $padding-x-small;
-
-    &:active,
-    &:focus,
-    &:hover {
-      transform: translateY(-5px);
-    }
-
-    &:first-child {
-      border-bottom: 3px solid $color-primary;
-    }
 
     &:last-child {
       margin-right: 0;
