@@ -10,10 +10,4 @@
   padding: $padding-large $padding-x-small $padding-extra-large;
   position: relative;
   text-align: center;
-
-	@include for-size(m) {
-    //replace if we need and image large in this size
-    background-color: $color-primary-test;
-	}
-
 }

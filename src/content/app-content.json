@@ -1,9 +1,10 @@
 {
   "nav": {
+    "logo": "debi",
     "icon": "nav",
     "items": [
       {
-        "label": "Categorias",
+        "label": "Hogar",
         "url": "/"
       },
       {
@@ -11,12 +12,20 @@
         "url": "/"
       },
       {
-        "label": "Sobre Nosotros",
+        "label": "Nosotros",
         "url": "/"
       },
       {
-        "label": "Contacto",
+        "label": "Contactanos",
         "url": "/"
+      }
+    ],
+    "icons": [
+      {
+        "icon": "search"
+      },
+      {
+        "icon": "shoppingcart"
       }
     ]
   },

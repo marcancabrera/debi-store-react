@@ -1,27 +1,27 @@
-import React, { Component } from 'react';
-import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Home from './pages/Home';
-import AppContent from './content/app-content';
+import Home from "./pages/Home";
+import AppContent from "./content/app-content";
 
 const ROUTES = {
-  home: '/'
+  home: "/",
 };
 
 class App extends Component {
-  render () {
-		const APP_CONTENT = AppContent;
+  render() {
+    const APP_CONTENT = AppContent;
 
-		return (
-			<Router>
-				<Switch>
-					<Route path={ROUTES.home} component={Home}>
-						<Home content={APP_CONTENT} />
-					</Route>
-				</Switch>
-			</Router>
-		);
-	}
+    return (
+      <Router>
+        <Switch>
+          <Route path={ROUTES.home} component={Home}>
+            <Home content={APP_CONTENT} />
+          </Route>
+        </Switch>
+      </Router>
+    );
+  }
 }
 
 export default App;
