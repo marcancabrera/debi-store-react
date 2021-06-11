@@ -1,0 +1,74 @@
+@import "../../scss/variables/layout";
+
+@mixin for-size-nav($size) {
+  @if $size == s {
+    @media (min-width: $s) {
+      @content;
+    }
+  } @else if $size == m {
+    @media (min-width: $m) {
+      @content;
+    }
+  } @else if $size == ml {
+    @media (min-width: $ml) {
+      @content;
+    }
+  } @else if $size == l {
+    @media (min-width: $l) {
+      @content;
+    }
+  } @else if $size == xl {
+    @media (min-width: $xl) {
+      @content;
+    }
+  }
+}
+
+.Nav {
+  --columns: 4;
+  --gap: 6%;
+
+  @include for-size-nav(s) {
+    --columns: 4;
+    --gap: 2%;
+  }
+
+  @include for-size-nav(ml) {
+    --columns: 7;
+    --gap: 2.19%;
+  }
+
+  @include for-size-nav(l) {
+    --columns: 7;
+    --gap: 2.27%;
+  }
+}
+
+.grid-nav {
+  margin: 0 16px;
+
+  @include for-size-nav(m) {
+    margin: 0 32px;
+  }
+
+  @include for-size-nav(ml) {
+    margin: 0 32px;
+  }
+
+  @include for-size-nav(l) {
+    margin: 0 80px;
+  }
+
+  @include for-size-nav(xl) {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+}
+
+.grid-nav {
+  display: grid;
+  align-items: center;
+  gap: 2%;
+  grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+  position: relative;
+}
