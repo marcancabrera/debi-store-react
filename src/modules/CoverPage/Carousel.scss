@@ -1,7 +1,7 @@
 @import "../../scss/base.scss";
-@import "./CoverPageLayout.scss";
+@import "./CarouselLayout.scss";
 
-.CoverPage {
+.Carousel {
   background-color: $color-primary-test;
   display: flex;
   padding: $padding-large $padding-x-small $padding-extra-large;
@@ -30,8 +30,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  // @include for-size-carousel(m) {
-  //   top: -10px;
-  // }
 }

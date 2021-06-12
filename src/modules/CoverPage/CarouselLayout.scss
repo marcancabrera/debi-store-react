@@ -1,0 +1,13 @@
+@import "../../scss/variables/layout";
+
+@mixin for-size-carousel($size) {
+  @if $size == m {
+    @media (min-width: $m) {
+      @content;
+    }
+  } @else if $size == ml {
+    @media (min-width: $ml) {
+      @content;
+    }
+  }
+}

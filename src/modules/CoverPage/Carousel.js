@@ -2,16 +2,15 @@ import React from "react";
 import AliceCarousel from "react-alice-carousel";
 
 import "react-alice-carousel/lib/scss/alice-carousel.scss";
-import "./CoverPage.scss";
+import "./Carousel.scss";
 
-function CoverPage(props) {
+function Carousel(props) {
   const content = props.content;
-  const scssClass = "CoverPage";
+  const scssClass = "Carousel";
   const handleDragStart = (e) => e.preventDefault();
 
   const items = [
     <img
-      // src={img1}
       className={`${scssClass}--img`}
       onDragStart={handleDragStart}
     />,
@@ -38,4 +37,4 @@ function CoverPage(props) {
   );
 }
 
-export default CoverPage;
+export default Carousel;
