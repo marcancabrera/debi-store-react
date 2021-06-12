@@ -1,6 +1,6 @@
 @import "../../scss/variables/layout";
 
-@mixin for-size-nav($size) {
+@mixin for-size-tab($size) {
   @if $size == s {
     @media (min-width: $s) {
       @content;
@@ -24,51 +24,51 @@
   }
 }
 
-.Nav {
-  --columns: 5;
+.Tabs {
+  --columns: 6;
   --gap: 6%;
 
-  @include for-size-nav(s) {
-    --columns: 7;
+  @include for-size-tab(s) {
+    --columns: 6;
     --gap: 2%;
   }
 
-  @include for-size-nav(ml) {
-    --columns: 7;
+  @include for-size-tab(ml) {
+    --columns: 6;
     --gap: 2.19%;
   }
 
-  @include for-size-nav(l) {
-    --columns: 7;
+  @include for-size-tab(l) {
+    --columns: 6;
     --gap: 2.27%;
   }
 }
 
-.grid-nav {
+.grid-tabs {
   margin: 0 16px;
 
-  @include for-size-nav(m) {
+  @include for-size-tab(m) {
     margin: 0 32px;
   }
 
-  @include for-size-nav(ml) {
+  @include for-size-tab(ml) {
     margin: 0 32px;
   }
 
-  @include for-size-nav(l) {
-    margin: 0 80px;
+  @include for-size-tab(l) {
+    margin: 0 300px;
   }
 
-  @include for-size-nav(xl) {
+  @include for-size-tab(xl) {
     margin: 0 auto;
     max-width: 1280px;
   }
 }
 
-.grid-nav {
+.grid-tabs {
   display: grid;
-  align-items: center;
-  gap: var(--gap);
+//   align-items: center;
+//   gap: var(--gap);
   grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
   position: relative;
 }

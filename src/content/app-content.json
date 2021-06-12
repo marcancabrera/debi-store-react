@@ -34,5 +34,32 @@
     "subtitle": "Reposteria y cocina",
     "cta": "Lorem Ipsum",
     "icon": "icon-example"
+  },
+  "categories": {
+    "tabs": [
+      {
+        "label": "Categorías",
+        "url": ""
+      },
+      {
+        "label": "BBQ",
+        "url": ""
+      },
+      {
+        "label": "Recetas",
+        "url": ""
+      }
+    ],
+    "icons": [
+      {
+        "icon": "categories"
+      },
+      {
+        "icon": "bbq"
+      },
+      {
+        "icon": "recetas"
+      }
+    ]
   }
 }

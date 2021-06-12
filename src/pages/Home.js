@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import Carousel from "../modules/CoverPage/Carousel";
+import Categories from "../modules/Categories/Categories";
 import Nav from "../components/Nav/Nav";
 
 class Home extends Component {
@@ -16,6 +17,7 @@ class Home extends Component {
       <div className={scssClass}>
         <Nav content={content.nav} type={uiConfig.quote} />
         <Carousel content={content.coverPage} />
+        <Categories content={content.categories}/>
       </div>
     );
   }
