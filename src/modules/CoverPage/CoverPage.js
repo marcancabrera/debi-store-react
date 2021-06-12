@@ -1,8 +1,6 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 
-import img1 from "../../images/coverpage.png";
-
 import "react-alice-carousel/lib/scss/alice-carousel.scss";
 import "./CoverPage.scss";
 
@@ -13,17 +11,15 @@ function CoverPage(props) {
 
   const items = [
     <img
-      src={img1}
+      // src={img1}
       className={`${scssClass}--img`}
       onDragStart={handleDragStart}
     />,
     <img
-      src={img1}
       className={`${scssClass}--img`}
       onDragStart={handleDragStart}
     />,
     <img
-      src={img1}
       className={`${scssClass}--img`}
       onDragStart={handleDragStart}
     />,
