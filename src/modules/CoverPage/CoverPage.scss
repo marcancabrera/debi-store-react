@@ -2,12 +2,19 @@
 
 .CoverPage {
   background-color: $color-primary-test;
-  //background-color: $color-cuaternary; take account of this color reusable
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: block;
+  display: flex;
   padding: $padding-large $padding-x-small $padding-extra-large;
   position: relative;
-  text-align: center;
+
+  &--img {
+    height: 460px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.alice-carousel__dots {
+  margin:0;
 }

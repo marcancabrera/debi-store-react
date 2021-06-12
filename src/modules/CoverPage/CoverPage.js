@@ -1,14 +1,44 @@
-import React from 'react';
+import React from "react";
+import AliceCarousel from "react-alice-carousel";
 
-import './CoverPage.scss'
+import img1 from "../../images/coverpage.png";
+
+import "react-alice-carousel/lib/scss/alice-carousel.scss";
+import "./CoverPage.scss";
 
 function CoverPage(props) {
   const content = props.content;
-  const scssClass = 'CoverPage';
+  const scssClass = "CoverPage";
+  const handleDragStart = (e) => e.preventDefault();
+
+  const items = [
+    <img
+      src={img1}
+      className={`${scssClass}--img`}
+      onDragStart={handleDragStart}
+    />,
+    <img
+      src={img1}
+      className={`${scssClass}--img`}
+      onDragStart={handleDragStart}
+    />,
+    <img
+      src={img1}
+      className={`${scssClass}--img`}
+      onDragStart={handleDragStart}
+    />,
+  ];
 
   return (
-    <div className={scssClass}>
-    </div>
+    <AliceCarousel
+      animationDuration="1000"
+      autoPlay
+      autoPlayInterval="2000"
+      disableButtonsControls
+      infinite
+      mouseTracking
+      items={items}
+    />
   );
 }
 
