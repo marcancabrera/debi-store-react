@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Carousel from "../modules/CoverPage/Carousel";
 import Categories from "../modules/Categories/Categories";
 import Nav from "../components/Nav/Nav";
+import Product from "../components/product/Product";
 
 class Home extends Component {
   render() {
@@ -17,7 +18,8 @@ class Home extends Component {
       <div className={scssClass}>
         <Nav content={content.nav} type={uiConfig.quote} />
         <Carousel content={content.coverPage} />
-        <Categories content={content.categories}/>
+        <Categories content={content.categories} />
+        <Product content={content.products} />
       </div>
     );
   }
