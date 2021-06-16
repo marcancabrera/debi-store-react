@@ -64,19 +64,44 @@
   },
   "products": [
     {
-      "title": "Cuchillo",
-      "subtitle": "1 lb de res con queso, verdura y pan.",
-      "price": "$10.00"
+      "brand": "Tramontina",
+      "name": "Frutero metálico 27x17x29cm",
+      "price": "Bs. 10.00"
     },
     {
-      "title": "Sarten",
-      "subtitle": "1 lb de res con queso, verdura y pan.",
-      "price": "$15.00"
+      "brand": "Tramontina",
+      "name": "Frutero metálico 27x17x29cm",
+      "price": "Bs. 10.00"
     },
     {
-      "title": "Plancha",
-      "subtitle": "1 lb de res, tocineta, queso, verdura y pan.",
-      "price": "$20.00"
+      "brand": "Tramontina",
+      "name": "Frutero metálico 27x17x29cm",
+      "price": "Bs. 10.00"
+    },
+    {
+      "brand": "Tramontina",
+      "name": "Frutero metálico 27x17x29cm",
+      "price": "Bs. 10.00"
+    },
+    {
+      "brand": "Tramontina",
+      "name": "Frutero metálico 27x17x29cm",
+      "price": "Bs. 10.00"
+    },
+    {
+      "brand": "Tramontina",
+      "name": "Frutero metálico 27x17x29cm",
+      "price": "Bs. 10.00"
+    },
+    {
+      "brand": "Tramontina",
+      "name": "Frutero metálico 27x17x29cm",
+      "price": "Bs. 10.00"
+    },
+    {
+      "brand": "Tramontina",
+      "name": "Frutero metálico 27x17x29cm",
+      "price": "Bs. 10.00"
     }
   ]
 }

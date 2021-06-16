@@ -7,9 +7,11 @@ function Product(props) {
 
   const Product = (info) => {
     return (
-      <div className= {`${scssClass}-content`}>
-        <h4 className={`${scssClass}-title h4--dark`}>{info.title}</h4>
-        <p className={`${scssClass}-description`}>{info.subtitle}</p>
+      <div className= {`${scssClass}-container`}>
+        <img className= {`${scssClass}-image`}  />
+        <p className={`${scssClass}-description`}>{info.brand}</p>
+        <h4 className={`${scssClass}-title h4--dark`}>{info.name}</h4>
+        <p className={`${scssClass}-description`}>{info.price}</p>
       </div>
     );
   };
