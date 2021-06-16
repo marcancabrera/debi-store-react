@@ -9,9 +9,9 @@ function Product(props) {
     return (
       <div className= {`${scssClass}-container`}>
         <img className= {`${scssClass}-image`}  />
-        <p className={`${scssClass}-description`}>{info.brand}</p>
-        <h4 className={`${scssClass}-title h4--dark`}>{info.name}</h4>
-        <p className={`${scssClass}-description`}>{info.price}</p>
+        <p className={`${scssClass}-brand`}>{info.brand}</p>
+        <h4 className={`${scssClass}-name`}>{info.name}</h4>
+        <h5 className={`${scssClass}-price`}>{info.price}</h5>
       </div>
     );
   };
