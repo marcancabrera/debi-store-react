@@ -19,7 +19,7 @@ function Product(props) {
   const Products = () => {
     return content.map((product, index) => {
       return (
-        <li key={index} className={`${scssClass}-product`}>
+        <li key={index} className={`${scssClass}-item`}>
           {Product(product)}
         </li>
       );

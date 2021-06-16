@@ -1,8 +1,8 @@
 @import "../../scss/variables/layout.scss";
 
 @mixin for-size-product($size) {
-  @if $size == xs {
-    @media (max-width: $s) {
+  @if $size == s {
+    @media (min-width: $s) {
       @content;
     }
   } @else if $size == m {
@@ -25,42 +25,47 @@
 }
 
 .Product {
-  --columns: 4;
-  --gap: 2.27%;
-  --minWidth: 300px;
+  --columns: 1;
+  --gap: 2%;
+
+  @include for-size-product(s) {
+    --columns: 2;
+    --gap: 2%;
+  }
 
   @include for-size-product(m) {
     --columns: 3;
     --gap: 2.27%;
-    --minWidth: 230px;
   }
 
   @include for-size-product(ml) {
     --columns: 4;
     --gap: 2.19%;
-    --minWidth: 230px;
   }
 
   @include for-size-product(l) {
     --columns: 5;
     --gap: 2.19%;
-    --minWidth: 290px;
   }
 }
 
 .grid-product {
-  margin: 0 16px;
+  margin: 0 10px;
+
+  @include for-size-product(s) {
+    margin: 0 32px;
+  }
 
   @include for-size-product(m) {
     margin: 0 32px;
   }
 
-  @include for-size-product(l) {
-    margin: 0 80px;
+  @include for-size-product(ml) {
+    margin: 0 50px;
   }
 
-  @include for-size-product(ml) {
-    margin: 0 80px;
+  @include for-size-product(l) {
+    margin: 0 50px;
   }
 
   @include for-size-product(xl) {
@@ -70,8 +75,9 @@
 }
 
 .grid-product {
+  justify-content: center;
   display: grid;
-  grid-column-gap: var(--gap);
-  grid-template-columns: repeat(auto-fit, minmax(var(--minWidth), 1fr));
+  grid-gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   position: relative;
 }
