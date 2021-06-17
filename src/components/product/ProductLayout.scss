@@ -1,7 +1,11 @@
 @import "../../scss/variables/layout.scss";
 
 @mixin for-size-product($size) {
-  @if $size == s {
+  @if $size == xss {
+    @media (min-width: $xss) {
+      @content;
+    }
+  } @else if $size == s {
     @media (min-width: $s) {
       @content;
     }
@@ -26,7 +30,7 @@
 
 .Product {
   --columns: 1;
-  --gap: 2%;
+  --gap: 1%;
 
   @include for-size-product(s) {
     --columns: 2;
@@ -35,25 +39,29 @@
 
   @include for-size-product(m) {
     --columns: 3;
-    --gap: 2.27%;
+    --gap: 2.10%;
   }
 
   @include for-size-product(ml) {
     --columns: 4;
-    --gap: 2.19%;
+    --gap: 2%;
   }
 
   @include for-size-product(l) {
     --columns: 5;
-    --gap: 2.19%;
+    --gap: 2.27%;
   }
 }
 
 .grid-product {
-  margin: 0 10px;
+  margin: 0 40px;
+
+  @include for-size-product(xss) {
+    margin: 0 10px;
+  }
 
   @include for-size-product(s) {
-    margin: 0 32px;
+    margin: 0 10px;
   }
 
   @include for-size-product(m) {

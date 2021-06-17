@@ -1,17 +1,26 @@
 import React from "react";
-import './Product.scss';
+
+import Icon from "../Icon/Icon";
+import "./Product.scss";
 
 function Product(props) {
   const content = props.content;
   const scssClass = "Product";
+  const icon = "shoppingcartwhite";
 
   const Product = (info) => {
     return (
-      <div className= {`${scssClass}-container`}>
-        <img className= {`${scssClass}-image`}  />
-        <p className={`${scssClass}-brand`}>{info.brand}</p>
-        <h4 className={`${scssClass}-name`}>{info.name}</h4>
-        <h5 className={`${scssClass}-price`}>{info.price}</h5>
+      <div className={`${scssClass}-container`}>
+        <img className={`${scssClass}-image`} />
+        <div className={`${scssClass}-text`}>
+          <p className={`${scssClass}-brand`}>{info.brand}</p>
+          <h5 className={`${scssClass}-name`}>{info.name}</h5>
+          <h4 className={`${scssClass}-price`}>{info.price}</h4>
+        </div>
+        <button className={`${scssClass}-button`}>
+          <Icon type={"secondary"} icon={icon} />
+          <h5>AGREGAR</h5>
+        </button>
       </div>
     );
   };

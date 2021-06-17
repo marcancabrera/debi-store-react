@@ -5,6 +5,7 @@ import instagram from "../../images/instagram.svg";
 import nav from "../../images/nav.svg";
 import search from "../../images/search.svg";
 import shoppingcart from "../../images/shoppingcart.svg";
+import shoppingcartwhite from "../../images/shoppingcartwhite.svg";
 import debi from "../../images/debi.svg";
 
 import "./Icon.scss";
@@ -17,6 +18,7 @@ function Icon(props) {
     'nav': nav,
     'search': search,
     'shoppingcart': shoppingcart,
+    'shoppingcartwhite': shoppingcartwhite,
     'debi': debi,
   };
 
