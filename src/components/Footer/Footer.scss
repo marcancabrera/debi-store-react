@@ -1,0 +1,68 @@
+@import "../../scss/base.scss";
+@import "./FooterLayout.scss";
+
+.Footer {
+  position: relative;
+  height: 100%;
+  background-color: $color-grey-terciary;
+  padding: 50px 0;
+  margin-top: 120px;
+
+  @include for-size-footer(xss) {
+    margin-top: 0px;
+  }
+
+  &-contact {
+	margin-top: 20px;
+	text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-black;
+    font-family: $font-primary;
+  }
+
+  a:hover {
+    color: $color-primary-test;
+  }
+
+  p {
+	margin: 0 10px;
+    font-family: $font-primary;
+    font-size: $font-size-small;
+    color: $color-black;
+  }
+
+  h3 {
+    font-family: $font-secondary;
+    padding-bottom: 10px;
+  }
+
+  &-in-box {
+	text-align: center;
+	margin: 20px 20px;
+    border: 1px solid $color-secondary-test;
+	background-color: $color-grey;
+	border-radius: 10px;
+	padding: 10px;
+  }
+
+  &-number-phone {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    font-size: $font-size-medium;
+    font-weight: 600;
+  }
+
+  &-item {
+    padding-top: 10px;
+    list-style: none;
+  }
+
+  &-list {
+    margin: 20px;
+    padding: 0;
+  }
+}

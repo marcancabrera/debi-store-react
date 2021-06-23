@@ -1,0 +1,72 @@
+@import "../../scss/variables/layout.scss";
+
+@mixin for-size-footer($size) {
+  @if $size == xss {
+    @media (min-width: $xss) {
+      @content;
+    }
+  } @else if $size == xs {
+    @media (min-width: $xs) {
+      @content;
+    }
+  } @else if $size == s {
+    @media (min-width: $s) {
+      @content;
+    }
+  } @else if $size == m {
+    @media (min-width: $m) {
+      @content;
+    }
+  } @else if $size == ml {
+    @media (min-width: $ml) {
+      @content;
+    }
+  } @else if $size == l {
+    @media (min-width: $l) {
+      @content;
+    }
+  } @else if $size == xl {
+    @media (min-width: $xl) {
+      @content;
+    }
+  }
+}
+
+.Footer {
+  --columns: 1;
+  --gap: 2%;
+  @include for-size-footer(s) {
+    --columns: 2;
+  }
+  @include for-size-footer(l) {
+    --columns: 4;
+  }
+
+  @include for-size-footer(xl) {
+    --columns: 4;
+  }
+}
+
+.grid-footer {
+  margin: 0 20px;
+
+  @include for-size-footer(ml) {
+    margin: 0 80px;
+  }
+  @include for-size-footer(l) {
+    margin: 0 80px;
+  }
+  @include for-size-footer(xl) {
+    margin: 0 auto;
+    max-width: 1228px;
+  }
+}
+
+.grid-footer {
+  justify-content: center;
+  align-content: center;
+  display: grid;
+  grid-gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  position: relative;
+}
