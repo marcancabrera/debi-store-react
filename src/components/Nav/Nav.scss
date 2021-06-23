@@ -8,14 +8,11 @@
   position: sticky;
   width: 100%;
   z-index: 1;
+  border-bottom: 1px solid $color-secondary-test;
 
   a {
     color: $color-black;
     text-decoration: none;
-  }
-
-  &--light a {
-    color: $color-white;
   }
 
   &-button {

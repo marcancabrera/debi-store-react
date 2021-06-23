@@ -1,0 +1,91 @@
+@import "../../scss/variables/layout.scss";
+
+@mixin for-size-product($size) {
+  @if $size == xss {
+    @media (min-width: $xss) {
+      @content;
+    }
+  } @else if $size == s {
+    @media (min-width: $s) {
+      @content;
+    }
+  } @else if $size == m {
+    @media (min-width: $m) {
+      @content;
+    }
+  } @else if $size == ml {
+    @media (min-width: $ml) {
+      @content;
+    }
+  } @else if $size == l {
+    @media (min-width: $l) {
+      @content;
+    }
+  } @else if $size == xl {
+    @media (min-width: $xl) {
+      @content;
+    }
+  }
+}
+
+.Product {
+  --columns: 1;
+  --gap: 1%;
+
+  @include for-size-product(s) {
+    --columns: 2;
+    --gap: 2%;
+  }
+
+  @include for-size-product(m) {
+    --columns: 3;
+    --gap: 2.10%;
+  }
+
+  @include for-size-product(ml) {
+    --columns: 4;
+    --gap: 2%;
+  }
+
+  @include for-size-product(l) {
+    --columns: 5;
+    --gap: 2.27%;
+  }
+}
+
+.grid-product {
+  margin: 0 40px;
+
+  @include for-size-product(xss) {
+    margin: 0 10px;
+  }
+
+  @include for-size-product(s) {
+    margin: 0 10px;
+  }
+
+  @include for-size-product(m) {
+    margin: 0 32px;
+  }
+
+  @include for-size-product(ml) {
+    margin: 0 50px;
+  }
+
+  @include for-size-product(l) {
+    margin: 0 50px;
+  }
+
+  @include for-size-product(xl) {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+}
+
+.grid-product {
+  justify-content: center;
+  display: grid;
+  grid-gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  position: relative;
+}

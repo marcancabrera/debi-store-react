@@ -5,7 +5,6 @@ import "react-alice-carousel/lib/scss/alice-carousel.scss";
 import "./Carousel.scss";
 
 function Carousel(props) {
-  const content = props.content;
   const scssClass = "Carousel";
   const handleDragStart = (e) => e.preventDefault();
 

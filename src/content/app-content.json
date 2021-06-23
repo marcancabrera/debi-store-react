@@ -61,5 +61,47 @@
         "icon": "recetas"
       }
     ]
-  }
+  },
+  "products": [
+    {
+      "brand": "Tramontina",
+      "name": "Frutero metálico 27x17x29cm",
+      "price": "Bs. 10,00"
+    },
+    {
+      "brand": "Tramontina",
+      "name": "Cocina empotrar 2Q domino llama normal GLP Fischer",
+      "price": "Bs. 34,00"
+    },
+    {
+      "brand": "Tramontina",
+      "name": "Frutero metálico 27x17x29cm",
+      "price": "Bs. 70,00"
+    },
+    {
+      "brand": "Tramontina",
+      "name": "Frutero metálico 27x17x29cm",
+      "price": "Bs. 10,00"
+    },
+    {
+      "brand": "Tramontina",
+      "name": "Frutero metálico 27x17x29cm",
+      "price": "Bs. 120,00"
+    },
+    {
+      "brand": "Tramontina",
+      "name": "Frutero metálico 27x17x29cm",
+      "price": "Bs. 10,00"
+    },
+    {
+      "brand": "Tramontina",
+      "name": "Frutero metálico 27x17x29cm",
+      "price": "Bs. 10,00"
+    },
+    {
+      "brand": "Tramontina",
+      "name": "Frutero metálico 27x17x29cm",
+      "price": "Bs. 10,00"
+    }
+  ]
 }
