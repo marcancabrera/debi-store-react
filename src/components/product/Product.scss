@@ -1,0 +1,128 @@
+@import "../../scss/base.scss";
+@import "./ProductLayout.scss";
+
+$heigth-image: 220px;
+$heigth-button: 50px;
+$heigth-container: 350px;
+
+.Product {
+  padding: $padding-large 0;
+  text-align: center;
+
+  &-container {
+    position: relative;
+    overflow: hidden;
+    height: $heigth-container;
+    text-align: center;
+    background-color: $color-white;
+    border: 1px solid $color-secondary-test;
+    border-radius: 16px;
+
+    @include for-size-product(m) {
+      height: 380px;
+    }
+
+    @include for-size-product(l) {
+      height: 400px;
+    }
+  }
+
+  &-text {
+    height: 100px;
+    position: relative;
+
+    @include for-size-product(m) {
+      height: 110px;
+    }
+    @include for-size-product(l) {
+      height: 132px;
+    }
+  }
+
+  &-image {
+    min-width: 100%;
+    width: auto;
+    height: 200px;
+    background-image: url("../../images/profile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include for-size-product(m) {
+      height: $heigth-image;
+    }
+  }
+
+  &-brand {
+    font-family: $font-primary;
+    font-size: 12px;
+    font-weight: 100;
+    color: $color-grey-secondary;
+    margin: 0;
+    line-height: 1.5;
+
+    @include for-size-product(l) {
+      font-size: $font-size-x-small;
+    }
+  }
+
+  &-name {
+    text-align: left;
+    font-size: $font-size-x-small;
+    margin: 0px $padding-x-small;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+
+    @include for-size-product(l) {
+      margin: $padding-x-small;
+      font-size: $font-size-x-small;
+    }
+  }
+
+  &-price {
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    margin: $padding-x-small;
+    font-size: $font-size-small;
+
+    @include for-size-product(m) {
+      font-size: $font-size-medium;
+    }
+  }
+
+  &-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-primary-test;
+    border: none;
+    width: 100%;
+    height: $heigth-button;
+    position: absolute;
+    bottom: 0;
+
+    h5 {
+      color: $color-white;
+    }
+  }
+
+  &-products {
+    list-style: none;
+    padding: 0;
+  }
+
+  &-item {
+    &:last-child {
+      margin-bottom: $padding-medium;
+
+      @include for-size-product(ml) {
+        margin-bottom: $padding-small;
+      }
+    }
+  }
+}

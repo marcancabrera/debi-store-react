@@ -2,7 +2,6 @@ import React from "react";
 
 import Cta from "../Cta/Cta";
 import "./Nav.scss";
-import "./NavLayout.scss"
 
 function Nav(props) {
   const content = props.content;
