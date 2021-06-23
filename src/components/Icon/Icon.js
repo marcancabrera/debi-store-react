@@ -7,6 +7,7 @@ import search from "../../images/search.svg";
 import shoppingcart from "../../images/shoppingcart.svg";
 import shoppingcartwhite from "../../images/shoppingcartwhite.svg";
 import debi from "../../images/debi.svg";
+import whatsapp from "../../images/whatsapp.svg";
 
 import "./Icon.scss";
 
@@ -20,6 +21,7 @@ function Icon(props) {
     'shoppingcart': shoppingcart,
     'shoppingcartwhite': shoppingcartwhite,
     'debi': debi,
+    'whatsapp': whatsapp,
   };
 
   return (

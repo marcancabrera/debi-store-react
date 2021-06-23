@@ -118,9 +118,9 @@ $heigth-container: 350px;
 
   &-item {
     &:last-child {
-      margin-bottom: $padding-large;
+      margin-bottom: $padding-medium;
 
-      @include for-size-product(l) {
+      @include for-size-product(ml) {
         margin-bottom: $padding-small;
       }
     }

@@ -15,10 +15,6 @@
     text-decoration: none;
   }
 
-  &--light a {
-    color: $color-white;
-  }
-
   &-button {
     @include for-size-nav(m) {
       display: none;
