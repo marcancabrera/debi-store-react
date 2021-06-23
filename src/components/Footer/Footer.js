@@ -59,7 +59,7 @@ function Footer(props) {
           <h3>Tienda Online</h3>
           {OnlineStore()}
         </ul>
-        <ul className={`${scssClass}-list`}>
+        <ul className={`${scssClass}-list-social-media`}>
           <li className={`${scssClass}-item`}>
             <a href=""><Icon type="secondary" icon="facebook"/></a>
           </li>
