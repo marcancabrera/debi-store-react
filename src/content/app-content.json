@@ -140,5 +140,11 @@
         "url": "/"
       }
     ]
+  },
+  "details": {
+    "name": "Cocina empotrar 2Q domino llama normal GLP Fischer",
+    "description": "Cocina empotrar 2Q domino llama normal GLP Fischer",
+    "price": 23.323,
+    "image": "../../images/profile.png"
   }
 }

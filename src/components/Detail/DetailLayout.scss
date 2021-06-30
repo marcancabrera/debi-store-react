@@ -1,0 +1,12 @@
+@import "../../scss/variables/layout.scss";
+
+// .Detail {
+
+// }
+.grid-detail{
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 400px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}

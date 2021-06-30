@@ -1,0 +1,13 @@
+@import "../../scss/base.scss";
+@import "./DetailLayout.scss";
+
+.Detail {
+  &-image {
+    width: 200px;
+    height: 200px;
+    background-image: url("../../images/profile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
+import ProductDetail from "./pages/ProductDetail"
 import AppContent from "./content/app-content";
 
 const ROUTES = {
@@ -16,7 +17,8 @@ class App extends Component {
       <Router>
         <Switch>
           <Route path={ROUTES.home} component={Home}>
-            <Home content={APP_CONTENT} />
+            {/* <Home content={APP_CONTENT} /> */}
+            <ProductDetail content={APP_CONTENT}/>
           </Route>
         </Switch>
       </Router>
