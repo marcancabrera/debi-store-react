@@ -1,12 +1,67 @@
 @import "../../scss/variables/layout.scss";
 
-// .Detail {
+@mixin for-size-detail($size) {
+  @if $size == xss {
+    @media (min-width: $xss) {
+      @content;
+    }
+  } @else if $size == s {
+    @media (min-width: $s) {
+      @content;
+    }
+  } @else if $size == m {
+    @media (min-width: $m) {
+      @content;
+    }
+  } @else if $size == ml {
+    @media (min-width: $ml) {
+      @content;
+    }
+  } @else if $size == l {
+    @media (min-width: $l) {
+      @content;
+    }
+  } @else if $size == xl {
+    @media (min-width: $xl) {
+      @content;
+    }
+  }
+}
 
-// }
-.grid-detail{
-    display: grid;
-    gap: 1rem;
-    grid-auto-flow: dense;
-    grid-auto-rows: 400px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+.grid-detail {
+  margin: 10px 10px;
+
+  @include for-size-detail(xss) {
+    margin: 10px 10px;
+  }
+
+  @include for-size-detail(s) {
+    margin: 20px 20px;
+  }
+
+  @include for-size-detail(m) {
+    margin: 50px 100px;
+  }
+
+  @include for-size-detail(ml) {
+    margin: 50px 100px;
+  }
+
+  @include for-size-detail(l) {
+    margin: 50px 100px;
+  }
+
+  @include for-size-detail(xl) {
+    margin: 50px auto;
+    max-width: 1280px;
+  }
+}
+
+.grid-detail {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: dense;
+  grid-auto-rows: 400px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  position: relative;
 }

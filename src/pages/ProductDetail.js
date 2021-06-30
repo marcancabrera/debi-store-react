@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 
-import Carousel from "../modules/CoverPage/Carousel";
-import Categories from "../modules/Categories/Categories";
 import Detail from "../components/Detail/Detail"
 import Nav from "../components/Nav/Nav";
-import Product from "../components/product/Product";
 import Footer from "../components/Footer/Footer";
 
 class ProductDetail extends Component {

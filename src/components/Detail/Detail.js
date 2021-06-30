@@ -1,5 +1,6 @@
 import React from "react";
 
+import image from "../../images/profile.png"
 import "./Detail.scss";
 
 function Detail(props) {
@@ -9,10 +10,10 @@ function Detail(props) {
   const Info = () => {
     return (
       <div className={`${scssClass}-info`}>
-        <p>{content.name}</p>
-        <p>{content.description}</p>
+        <h3>{content.name}</h3>
+        <h5>{content.description}</h5>
         <hr />
-        <p>{content.price}</p>
+        <h3>{content.price}</h3>
       </div>
     );
   };
@@ -39,8 +40,8 @@ function Detail(props) {
 
   const RightSide = () => {
     return (
-      <div>
-        <img className={`${scssClass}-image`} alt={content.name} />
+      <div className={`${scssClass}-container-image`}>
+        <img className={`${scssClass}-image`} src={image} alt={content.name} />
       </div>
     );
   };
