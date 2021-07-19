@@ -8,6 +8,8 @@ import shoppingcart from "../../images/shoppingcart.svg";
 import shoppingcartwhite from "../../images/shoppingcartwhite.svg";
 import debi from "../../images/debi.svg";
 import whatsapp from "../../images/whatsapp.svg";
+import plus from "../../images/plus.svg";
+import minus from "../../images/minus.svg";
 
 import "./Icon.scss";
 
@@ -22,6 +24,8 @@ function Icon(props) {
     'shoppingcartwhite': shoppingcartwhite,
     'debi': debi,
     'whatsapp': whatsapp,
+    'plus': plus,
+    'minus': minus
   };
 
   return (

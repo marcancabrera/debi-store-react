@@ -2,6 +2,9 @@
 @import "./DetailLayout.scss";
 
 .Detail {
+  background-color: $color-white;
+  padding: $padding-large;
+
   &-container-image {
     text-align: center;
     position: relative;
@@ -10,7 +13,7 @@
 
   &-image {
     width: 100%;
-    height: 400px;
+    height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,6 +21,7 @@
 
   &-container-buttons {
     display: flex;
+    align-items: center;
   }
 
   &-button-add {
@@ -34,5 +38,32 @@
     h5 {
       color: $color-white;
     }
+  }
+
+  &-incremator-container {
+    display: flex;
+    align-items: center;
+    height: 30px;
+  }
+
+  &-incremator-input {
+    background-color: $color-grey-quinto;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    height: 45px;
+    width: 45px;
+  }
+
+  &-incremator-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-inline: 5px;
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: $color-grey-cuaternary;
   }
 }

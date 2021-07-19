@@ -1,6 +1,6 @@
 import React from "react";
 
-import image from "../../images/profile.png";
+import image from "../../images/test-product.png";
 import Icon from "../Icon/Icon";
 
 import "./Detail.scss";
@@ -8,7 +8,9 @@ import "./Detail.scss";
 function Detail(props) {
   const content = props.content;
   const scssClass = "Detail";
-  const icon = "shoppingcartwhite";
+  const shoppingcartIcon = "shoppingcartwhite";
+  const plusIcon = "plus";
+  const minusIcon = "minus"
 
   const Info = () => {
     return (
@@ -21,12 +23,22 @@ function Detail(props) {
     );
   };
 
+  const IncrementButton = () => {
+    return (
+      <div className={`${scssClass}-incremator-container`}>
+        <button className={`${scssClass}-incremator-button`}><Icon type={"secondary"} icon={minusIcon} /></button>
+        <input type="text" value="1" className={`${scssClass}-incremator-input`} disabled/>
+        <button className={`${scssClass}-incremator-button`}><Icon type={"secondary"} icon={plusIcon} /></button>
+      </div>
+    );
+  }
+
   const Buttons = () => {
     return (
       <div className={`${scssClass}-container-buttons`}>
-        <button>1</button>
+        {IncrementButton()}
         <button className={`${scssClass}-button-add`}>
-          <Icon type={"secondary"} icon={icon} />
+          <Icon type={"secondary"} icon={shoppingcartIcon} />
           <h5>AGREGAR</h5>
         </button>
       </div>
